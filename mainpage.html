@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDICUS</title>
+    <script src="https://kit.fontawesome.com/040a337d2d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="shortcut icon" href="images/testlogo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="mainpage2.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img class="logo" src="images/Medicus__2_-removebg-preview.png">
+            <ul>
+                <!-- <li><a href = "index.html" class = "nav-link"><i class="fa-solid fa-house-chimney"></i>  Home</a></li> -->
+                <li><a href = "index.html" class = "nav-link">Logout  <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+            </ul>
+        </div>
+        <div class="letters">
+            <!--a-->
+            <div class="ui-card">
+                <img src="data:image/png;base64,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">
+                <div class="description">
+                    <h3>A</h3>
+                    <p>Medicine names starting with alphabet A</p>
+                    <a href="letterA.html">Read More</a>
+                </div>
+            </div>
+            <!--b-->
+            <div class="ui-card">
+                <img src="data:image/png;base64,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">
+                <div class="description">
+                    <h3>B</h3>
+                    <p>Medicine names starting with alphabet B</p>
+                    <a href="letterB.html">Read More</a>
+                </div>
+            </div>
+            <!--c-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX_EKQp3HcXwdnLNTQ-edQIQKY711yysHT1A&usqp=CAU">
+                <div class="description">
+                    <h3>C</h3>
+                    <p>Medicine names starting with alphabet C</p>
+                    <a href="letterC.html">Read More</a>
+                </div>
+            </div>
+            <!--d-->
+            <div class="ui-card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEX///8AAADMzMzX19d4eHh9fX1tbW339/exsbGgoKD6+vrm5ubg4ODq6uq/v7/w8PCXl5eoqKhcXFxRUVEjIyNHR0efn5/Pz8+Li4saGhq0tLTV1dWTk5NlZWWrq6tOTk4wMDATExNqamo6Ojo3NzcsLCwODg4zBJ/SAAAErklEQVR4nO2d2VLbQBBFR3jBBi94AQzYBgLk/z8xtlMxJFxtUd9uleqed/fMKcmavSclIYQQQgghhBBCCCGEEEIIIYQQQggRy3WvNpMj08vomldkkjVh/bIcbsaz3jxao4CLRoaf3A5Gk2gXjJXhid1oGu3zHVPDA+/jtr2x1oYHVrNoqb8gGB5YRGt9gWOYZeNosTMswyxry7vKM8xu2/FhJRq25FWlGmbPLejacQ2zrBctSDfMHjtvmN103jAbdN4w63feMNt03jC0YYSGFX53dTnvPc322/5tJcULukgu/2v4hfn93bJUMa4HZ2B44n5QbPhgXvOqWBke2L8WKYZ9UA0NUxoVKUaNpkwNU9oUKF7Z1boOxoZpss41HJpVuhbWhikNcxWfjOpcD3vDtMgzfLGocG0IhmmWpxgykmIY5ncFLWpsUpnGUR9zDCPmUTmG6aY9D5FkmHJ6qiOD0DVhGSZsuLYIXQ+a4T1W9B9G0QxzWv6lSew68Ayv8EN0X17kGaYxNHSf0CAa4o+N+1CYaYg7qN4bGpiG+CFuraJXhGoIx8PerynV8Bo+xGur8NWgGiY4merc/eYawqmplVn4SnANL+Fraha+ElxD/Jre28WvANkQ9mt810zJhj0U3vePSDbEjb5h/HLYhnCs79oisg3vUHzXJQy2IYzv2jVlG85R/J1hAaWwDeGnxrXzTTdcsQsog24IV789V/XphnCg79lvoxvChSjPqW+6Iey33VmWUALdEDYXnpv56IZwYviHZQkl0A1hg3hrWkIxMYZvpiUUwzd8p5dQDN8wulPDN4QjRNMSipFhc+BKqeNJExk2Bxo6rgQHGToOn/QMm9P9/yFsLbpvaFpCMTJszlvnDV87b4gKeDctoRiN8RsDl/I9Fy7ohjDFT6fm2uBOWs+VfLoh3La/tyyhBLoh3LXvuReabthHBXjuwKQbwi6NZ7qMkDXgTq2QTlH8Z8MCSmEbwuVD1zwSbMMtiu/ZWNAN4Zy+62HSkH1trmeeI/YmftjFrwDZEG5r801YE7FH2Pc4cMQ+b98sIFxDOLD4aRa+ElxDOJPonDeKaohfUucUIFRDfHjNKnpFqIYwC4j3OVmmIU6t4H1gnWn4DA2909QQDWGPzXeP9xGiIX6E7smUeIY5CU5MYjeuh0lknE7JPxMmzTAnu4l/PnOWIT4CHJENi2X4gQ2dTzkfIRnCme6ApiKxDPdYMOIR+mbCCslJxzDMSb7ju1xxhmCYm8ssJiu0vSGcXjsSlMLU2nAOJ7lP+B7DP2NsiPMKnYhK0eqWodV5hu0TO8MpXGY6E3ZXkpHhdFGS9Tru5hkDw+vHwUOxXlj+2SNNDOe92WJQKWO55z62f4GGgxKGu9Vzfr7g7zwEJUnON7Qm9C4WD8PYe8r4hq/BF7HRDT+irwtiGzon9vI3DL2dxMMw8OKOM0zDVfRf8ATRMPwuq9/QDAeR/ZivkAyXEfOGGIrhrk0X5xIMN+242fEP1obLtlzOecbUcDhry+flC1aG6353b61+G24f42+qLGDbr89gs7m5uRvNLibt+qgIIYQQQgghhBBCCCGEEEIIIYQQQgghhGgTvwCNWjQIsPRV5gAAAABJRU5ErkJggg==">
+                <div class="description">
+                    <h3>D</h3>
+                    <p>Medicine names starting with alphabet D</p>
+                    <a href="letterD.html">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="letters">
+            <!--e-->
+            <div class="ui-card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOoAAADXCAMAAAAjrj0PAAAAP1BMVEX///8AAABVVVXm5uY9PT1xcXFSUlL5+fnZ2dmnp6cEBARGRkbg4OBtbW04ODgxMTGwsLCfn5/T09P19fVhYWHnHlm4AAABC0lEQVR4nO3bW27CQBBFQUyAJOaVB/tfKwvwz4wG1OqeqhXc82HJasu7HQAAAAAAAAAAAAAAAPB619thzP0nOqHVaRn1HZ3Qai9VqtQUpEqVmoNUqbVS12lS1+7U3+iEVpvU5St60rtsn1Wp+UmtSGpFUiuSWpHUiqRWJLUiqRVtU/8+2/1Hz+8xeEaLnt9j8A4cPb+HVKlSc5AqVWoOUqXWSp3ndX9dzqd2h+j5Pbapl+hJ7zL1FUJqflIrklqR1IqkViS1IqkVSa1IakVSK5o6dZrj6Lo8jp0e0Q2Nxn/qTPM1Q6pUqTlIlSo1B6lSpeZwnif14wWiGwAAAAAAAAAAAAAAAAAAACCbJ3RMFiUuhc3ZAAAAAElFTkSuQmCC">
+                <div class="description">
+                    <h3>E</h3>
+                    <p>Medicine names starting with alphabet E</p>
+                    <a href="letterE.html">Read More</a>
+                </div>
+            </div>
+            <!--f-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHJKuV3ZCb-g0exRwMFa5kCT96lv23Cusu2A&usqp=CAU">
+                <div class="description">
+                    <h3>F</h3>
+                    <p>Medicine names starting with alphabet F</p>
+                    <a href="letterF.html">Read More</a>
+                </div>
+            </div>
+            <!--g-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ztfszGOMSJcrTWkdyYA-2EmGMLeWWjDmYw&usqp=CAU">
+                <div class="description">
+                    <h3>G</h3>
+                    <p>Medicine names starting with alphabet G</p>
+                    <a href="letterG.html">Read More</a>
+                </div>
+            </div>
+            <!--h-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrNUOMtn_qZzEz6XNk2ahiHZsE5DtknPgdVw&usqp=CAU">
+                <div class="description">
+                    <h3>H</h3>
+                    <p>Medicine names starting with alphabet H</p>
+                    <a href="letterH.html" >Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="letters">
+            <!--i-->
+            <div class="ui-card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAAB9fX2RkZFhYWG7u7vQ0NBwcHBmZmaMjIwiIiIrKytOTk44ODhVVVUZGRmDg4OxsbHz8/Pr6+tcXFyoqKimpqbJycl2dnZra2vCwsLe3t4QEBAlJSUvLy9HR0eampo/Pz/a2tr4Xlh+AAACf0lEQVR4nO3d226iABCAYbFQD0UUOVVpLfr+D7nNZrvZDeOGNZNMZ/i/uya9mD9NpIAMiwUAAAAAAAAAAAAAAPetkyTZXz6KOl0tD4fN09C2TdOUZZn9qSybph2GzWG5qovrNklW1nNPt08esrWee7rtY4Uv1nNPRyGF39/lscKd9dzTHZ9/6c7t6z+jTkN57r5++2g996O6l3t9nfVoaj7kwLP1XHoqudB6LE07KfDVeipN4sdNaz2VpiH258ynUirsrafS1EmFlfVUmp6lQrcHeEkf/WAhHxCth1J1DF+4mGXhm/VMuoRCR9edpngbFzo6o5/ifVx4sZ5Jl3ASfLWeSZdw+hSsUDjLz61n0pWHL0zHhan1TLriF67nWLi2nknXikL3hMKT9Uy6luNCR3ftp6DQvw2F7gmFS+uZdFHoX/zCJwrdo9A/Cv2j0D8K/aPQPwr9o9A/Cv2j0D8K/aPQPwr9o9A/Cv2j0D8K/aPQPwr9o9A/Cv2j0D8K/Yv/7UsK/Zvld/WDFR7CF8Z/KkgoDPZ0nrDOLP4TlhQ6M8un1YMVCjsVgu3FqMMXCrtNgu2nuY4LHe1FnkLYMRRsE5awJ+rdeiZdwg7zvfVMusaBM9gqSKEz4QvF/aWhtuyKO2hDbUq+SYXxt13frKfSlEmFoXayN1JhZj2VJuGSd7A3B5ykwo31VJrEV+uEutgmBYY6fRJf/hDpn5o7r5mJc+dCPBj+lAb4K1Zn8UDxW93cXFYK99KmcHRnnzc83uHo+iKFFH5/fxfut7tdnudFUdTpl88fijzfXbZOC6usu/XVfxzojlXfd1moCzcAAAAAAAAAAAAAAAAAAAAAAMT1A2UmHAP3ZB01AAAAAElFTkSuQmCC">
+                <div class="description">
+                    <h3>I</h3>
+                    <p>Medicine names starting with alphabet I</p>
+                    <a href="letterI.html">Read More</a>
+                </div>
+            </div>
+            <!--J-->
+            <div class="ui-card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOoAAADXCAMAAAAjrj0PAAAAY1BMVEX///8AAADLy8vY2Nj8/Pz4+Pitra3Hx8fv7+/k5OTg4OCenp6hoaGPj4+4uLjU1NR9fX2Hh4dxcXFGRkbCwsK0tLQ8PDxcXFxqamoRERFkZGQeHh7z8/N4eHgqKiphYWFJSUnVs2mDAAAB/0lEQVR4nO3by1LCQBBG4QRCQgCDXAXBy/s/pVKwkHQTwQDD/J5vZUkv5sgkjKkiSQAAAAAAAAAAAAAAAAAAAAAAwH+QZaFXcCNFp6ZIVFNTI/SKboZURaQqIlURqYpIVUSqIlIVkaqIVEWkKiJVEamKSFVEqiJSFZGqiFRFpCoiVRGpikhVRKoiUhWRqohURaQqIlURqYo0U90vgGml9vrbMs/zrvuiQuqgLIvhaLSczQ4JQ3dMIfW5nqCb+lRPGLljkqkv7phk6tKb6pjS1b0X2l5Vb1j3nCmb+hrft5K7JqLvTJk/SPoRX+rYROTOlLlPp9XdV9pa/6ytaYbSeYC1trUxFVszU9pU74p+bJmzN9/qI8nEzLyHWW4bWVLYd2xRG+rZkWmQ1bbkbM60OP7/ZmYnvHvX43NSj06H409nwPtEenxDr3WT72N61Yf3cpT719/Bv4nxo2bn7eLSWXxHpb3Bxamd0Ev+o8y7wzaK9ErdpdrDYbM4b79784tKF7FeqcnufbUnv8bSeFO/Y5dnlz6FXmtr57YOI969B9l5e7g68fQ/LuaBmrWO+d77U9c71/8MjfAhy0mdhsPE+yT06q5svPJDp7Ee8BuVVe0ZzGRU7H4f9adpg373YBx6JbeWuT8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICr+QIS9w/fffd0QQAAAABJRU5ErkJggg==">
+                <div class="description">
+                    <h3>J</h3>
+                    <p>Medicine names starting with alphabet J</p>
+                    <a href="letterJ.html">Read More</a>
+                </div>
+            </div>
+            <!--K-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTFbJ6h3u77Ej6Eo_M7W12gKYqNxc1oNNuog&usqp=CAU">
+                <div class="description">
+                    <h3>K</h3>
+                    <p>Medicine names starting with alphabet K</p>
+                    <a href="letterK.html">Read More</a>
+                </div>
+            </div>
+            <!--L-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7herIMur66nNpcp_DZvGxlnVHvQTRlbjAyw&usqp=CAU">
+                <div class="description">
+                    <h3>L</h3>
+                    <p>Medicine names starting with alphabet L</p>
+                    <a href="letterL.html">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="letters">
+            <!--M-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8whMbCNCW6Fc7eAzvocqLUexiXUT9KCkkMg&usqp=CAU">
+                <div class="description">
+                    <h3>M</h3>
+                    <p>Medicine names starting with alphabet M</p>
+                    <a href="letterM.html">Read More</a>
+                </div>
+            </div>
+            <!--N-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_kTNaqMjsDcRsk-mJNvl5ytg_NUJuqDNngA&usqp=CAU">
+                <div class="description">
+                    <h3>N</h3>
+                    <p>Medicine names starting with alphabet N</p>
+                    <a href="letterN.html">Read More</a>
+                </div>
+            </div>
+            <!--O-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnW9J00ye6-HfkvdW5Seo79LbTYKJhEKn3nQ&usqp=CAU">
+                <div class="description">
+                    <h3>O</h3>
+                    <p>Medicine names starting with alphabet O</p>
+                    <a href="letterO.html">Read More</a>
+                </div>
+            </div>
+            <!--P-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvhaqD-Fs3_7lxUR2VcxwgIGzNMoqk5DFcHg&usqp=CAU">
+                <div class="description">
+                    <h3>P</h3>
+                    <p>Medicine names starting with alphabet P</p>
+                    <a href="letterP.html">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="letters">
+            <!--Q-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1KCk7wOt0YDfnROVn9NjeeGwR-OXvmNU-pg&usqp=CAU">
+                <div class="description">
+                    <h3>Q</h3>
+                    <p>Medicine names starting with alphabet Q</p>
+                    <a href="letterQ.html">Read More</a>
+                </div>
+            </div>
+            <!--R-->
+            <div class="ui-card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOoAAADXCAMAAAAjrj0PAAAAbFBMVEX///8AAAChoaGenp6tra2Tk5MODg62trZlZWX8/Pzu7u7S0tLx8fHo6OiIiIj19fXa2tp8fHzBwcHLy8s2NjZeXl4nJydwcHBBQUG+vr5OTk7e3t5GRkZTU1NtbW0TExMzMzOQkJCBgYF3d3fwdMK7AAADXUlEQVR4nO3c61biMBRA4YarVQuFCqKoeHn/dxwEZ9TpKeTSS07Z3/9ZK3slzIQkTJIAAAAAAAAAAAAAAAAAAAAAAAAArchHNm6uv3Q93BBD4+Rus3kajrYqkwduqX9NFsU8SdKuR+/EM/XTKut68G4CUo1Z510P30VQqjEzRas4MNXs9Kzi0FRjMi3zGp5qtMxrDamm6wZLdaQ+dx1hp45UM+26wkotqTqWcD2p711n2Kgn1WjY/5dT7x+mP4xXV982lamDrjsslFNPjTobvMqpm9YG7K+cOjz9B7K12JrHv2dyTE3TJF3IK7hvqQdS61ULYw3kk5pI09rPWU0ehNT4N/1eqcldOfWm8aGG8kv9uJzU2eWkLkmNGqlnXFDquJy6bXyoofxSH8upjY80mFfqvFx61/xQQ7mn7r/cvJdTZ/3cA2flUrPsX2oqlyr4qHrM6lYqnbUy2DCuqdm9VKr0xLDyGC3f5uMnMVTDGYSUOtlNRHLkUfxbpaSmI2+bXUf3uIlzctt1hB1uzZ1K0+g3SgehqRMtcxqc+n4p75aePr+PX0Lq80PXg3fjm7oeZoom9MAn9fVjGP9JUpl76ljXXH7zmNX7ubKV+6WcuiiK4m2xJ9xBHU2W2j6mB6e/mucVk/6iZNv7y7lTiFT+HcN63tF4A5w/cLntS+vZ1DS5XYmtKk4efrI6RhNbTaHs7yar1Gv5YEnPl5oDu8PRXnxeLc+BhQtVo+Nl4TfbI2/5pFvDg9F/rE/3q15R6mGdmoupRtHH1f7OZiSmqrjCOHK4npLva5ZtjjaIQ6r8L45Rs4+wT00rl7Dac+ATd00vYquW0zS3q2Qxda1jUh1TC7FVxQ+KnB8IyJsmHft+119k7KRUBe+zEvdnH/ISVnFt7vyYp08vXM6kzsUlvGpntEHcn2jJS7hoZbRBPN4YykfhbQw2jEeqvBcetzHaID4vR6di6zb2A0Svp8/PUupjL1PlJTxqfrRBfFLTiiUc+Z2V388U5PP+l6YHG8Yz9Vqc1rhftXumykt41/Bgw/imyks46nft3qnCb21M3P+RQPlS3PYLmbiEY77FKd7Gv71Zb9wH///RvZmuB012S7DqRDTeBQwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQFT+AMJhIscRIMV1AAAAAElFTkSuQmCC">
+                <div class="description">
+                    <h3>R</h3>
+                    <p>Medicine names starting with alphabet R</p>
+                    <a href="letterR.html">Read More</a>
+                </div>
+            </div>
+            <!--S-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU95GvvtbOPGulNLLXm8XknRw7qHB4CB332A&usqp=CAU">
+                <div class="description">
+                    <h3>S</h3>
+                    <p>Medicine names starting with alphabet S</p>
+                    <a href="letterS.html">Read More</a>
+                </div>
+            </div>
+            <!--T-->
+            <div class="ui-card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX///8AAABLS0u5ubmlpaUNDQ2Ghoa/v7/Z2dk7Ozutra37+/vi4uKioqKoqKjNzc2AgIBvb2/u7u709PRjY2NEREQWFhaRkZGamprHx8fOzs54eHhTU1NpaWk0NDTf398gICBaWlocHBwTExMwbnQMAAACf0lEQVR4nO3cb1uqMBiA8ZUmIP5HM7OyOt//O54DFCdnMAbD7fG6f2/d5fXchaB7MaUAAAAAAAAAAAAAAAAAAAAAQBMn90NIlr7DKoe7YYx8h1WGKpz6DquMBiqc+w6rLAYq3PsOqzwNVDjxHVbZ10z48FPTaxevlla+wyqTs7nW80O8SdP0fI32Wb2/eJN08zw9npcerzS/2er/UC91zzBjYSn+8V5326EGtvZazXSoXdOyUKls3WLRtb18TfSW1a9pXahU9L3ozfmkXSXlQEnTGotCdfpa9O5yyF7ey4Ea/oN2hSouFz04nbKP8g4YN66xKvxe7XDGfoppDI9nu0K1DaowLaZJmxdZFmbm6/6KimlM3yEtC8tvERtHE/a1afPnti2c5atmjibsa9ZmYtvC4gYdUqHxp5x1YX6ZnpzM119sfFSoDoX5xkEoGzUH8520Q2H+6Y6czNffqM03SOtC9RnOVtS0ze8c+8JdOFtR4zb7DfaFx3C2omZRZL7p2ReeoiiUp0Ur9oXSUCgfhfJRKB+F8lEoH4XyUSgfhfJRKB+F8lEoH4XyUSgfhfJRKB+F8lEoH4XyUSgfhfJRKB+F8lEoH4XyUSgfhfJRKB+F8lEoH4XyUSjf7RdOb75QO/Fs53se97QTz8I5PsgZ7cSzR9/zuLc6LzQfUSDOh1YYytEz7nxqhc++B3It0wKDOS7BmaVeuPY9kWtrvTCYU64cmV0E3thlmj1eFpoP7REk/v140lBOn+ktfv21758kEv3cX44Xi8V8v/1T11fYTZ7ydQvf03YxaSzT+Z62i9svXM7HFnxPCwAAAAAAAAAAAAAAAAAAAAAAAAAAAITkLy5DFd8/ywMDAAAAAElFTkSuQmCC">
+                <div class="description">
+                    <h3>T</h3>
+                    <p>Medicine names starting with alphabet T</p>
+                    <a href="letterT.html">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="letters">
+            <!--U-->
+            <div class="ui-card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEX///8AAAYAAAA7Ozzk5OTu7u9OTk8AAAOTk5Tf398nJyn39/fy8vIvLzB+fn/IyMgNDRBoaGnV1dWgoKCGhofAwMDX19e0tLVGRkdwcHF5eXpYWFmpqaogICI5OTtycnNCQkSZmZoYGBtgYGGOjo/CwsJTU1TclqOlAAAERklEQVR4nO3c63KqMBSGYYxnqWIFa22ttZ7u/xI3Wu0GsxJAK13OvM+vPbNZM+vTAInTJAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMEkMfH11S+9YeP3ermDSTI2qf5VxeH081Bs3n+5qV9zarDRaJhx9epJb3mqbpiv32/uZmHUW50bPPT4XKn6Jd5nitPy6E5tXqk/Gy1zDR56bJUsbk23r4fibq56eNeGK+hPv+ZDYzVYLmE7WoyO4fKfzbF6WUPzRZJ5syG3VyJh9PY+MOInc6pu1hXDw5mtTMKtM5umhJ4GCxP2iqpJWAf/MCtM6B3iOhKenhSuRv0JF8O170GjI2GqFcXztSNk8dsi7E97HVe1koRHrS+xyZJv/DCWqzUlDIKnD6HJ0nOacChV60oYtG5JGITCt6gtYbAReiydMFg8QEKpx/IJhVeruoQvtyVc2TNvbQmfbkuY6E8Y2G/uKgntQa4v4djusULC3QMktN9pVRLat7G+hMubEvYfIKHwNKyQ0J4x6Ev4elPC9gMk7JDQi4QakNCPhBqQ0I+EGpDQj4QakNCPhBqQ0I+EGpDQj4QakNCPhBqQ0I+EGpDQj4QakNCPhBqQ0I+EGpDQj4QakNDvQRNW2EVKQg2EhC/lqx80YYV9rg+acFa++hES7u0eF+Wr7T+E15fw3e5xW746sqs17APOebZ7nJcujoS/9FeX8POGcbaT9j2p2a1+NrKa7JqSpTNpe56+hNurN83E8g7L9Z0brkza2lXqdWF/+d/FZUdAbaZCws8SdfYzuOIYr81ESFjcZHvgCJhWP9XQdRXC5rWG2RUURZ4d61UWX/WQnviv/pKtb0u+tuNbpE0zBV22MpvBpNoKk7562Jsk/XdiL3vcTvPK51SthIdp2ubKcfVunZmomY60ETj36bQn909QJJRf3KtQuDZaZu9As5Hv4v9DPNqYfX1JnISRdvwqLu/FcPGRy2NGgbR98WfeNkmO52fUHUcgz77SiK/T/xe1Z5v8QRjd71O9hP38aeXbV/J+PjtMwTB9ch5TkoZM4tksTjb2gVfmO770nMod0WR6fxzvwF4iXvRqH2Nizj9XCdPaiysHfxvuyN7MW8QMzlMze5F/+VGM/jTbiedLlHQzh9ZJk77slYMKP03ekfNOdHwt2VmLvZ8/e6WaMwYL76Zs2+Pcb+Jz9yLD7Nt/Fchm/6bobPtiUjZzVBozLlqh1GtdLqJpXM4DHDeiogF60vafUXZuO7ErxbWJ+dS2Dk4j+h4Zp7Y70uLWHqbpDahuFXwQ7v2nKZqhY9F4cZqWMU0FEzXZwnlKXfofTeeiOPdLj/uD0CEeSyeSpt58L+6fqXvXmJXqfAfRW2Ye2j3+8yMp6jo+TMsPFz/rmMEU6S9GndN8e7jp7cq8tfvP6cWdhb7np1coLfI9l9+pDQAAAAAAAAAAAAAAAAAAAAAAavMPxB4uQZZHfeQAAAAASUVORK5CYII=">
+                <div class="description">
+                    <h3>U</h3>
+                    <p>Medicine names starting with alphabet U</p>
+                    <a href="letterU.html">Read More</a>
+                </div>
+            </div>
+            <!--V-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVGUXxou_oFvc9vnk8804cRr32xDyeSQS7Hw&usqp=CAU">
+                <div class="description">
+                    <h3>V</h3>
+                    <p>Medicine names starting with alphabet V</p>
+                    <a href="letterV.html">Read More</a>
+                </div>
+            </div>
+            <!--W-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq2toj9HNGI9jovalGaJsSeAdm-cuteSJ5fg&usqp=CAU">
+                <div class="description">
+                    <h3>W</h3>
+                    <p>Medicine names starting with alphabet W</p>
+                    <a href="letterW.html">Read More</a>
+                </div>
+            </div>
+            <!--X-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbKAZ-B055VeHlpPaWIDB4xwRICm3GdbXvLw&usqp=CAU">
+                <div class="description">
+                    <h3>X</h3>
+                    <p>Medicine names starting with alphabet X</p>
+                    <a href="letterX.html">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="letters">
+            <!--y-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTidBmLBsao8YlesVXBLY1Awuep6E7WlZf-Kg&usqp=CAU">
+                <div class="description">
+                    <h3>Y</h3>
+                    <p>Medicine names starting with alphabet Y</p>
+                    <a href="letterY.html">Read More</a>
+                </div>
+            </div>
+            <!--Z-->
+            <div class="ui-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ8yR2xO3u0xTM3oGJGT03jXD5wtyf0bNTyg&usqp=CAU">
+                <div class="description">
+                    <h3>Z</h3>
+                    <p>Medicine names starting with alphabet Z</p>
+                    <a href="letterZ.html">Read More</a>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

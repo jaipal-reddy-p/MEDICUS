@@ -10,10 +10,6 @@ This project focuses on creating a minimal and responsive frontend medical infor
 
 ---
 
-# README.md
-
-# 💊 Medicine Directory Web Application
-
 A simple frontend-based medical information web application developed using HTML, CSS, and JavaScript.
 
 ## 📌 Overview

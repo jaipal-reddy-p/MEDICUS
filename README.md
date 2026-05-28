@@ -97,17 +97,6 @@ Simply open the `index.html` file in your browser.
 
 ---
 
-## 📸 Screenshots
-
-You can add screenshots of:
-
-* Homepage
-* Medicine List
-* Login Page
-* Signup Page
-
----
-
 ## 🎯 Future Enhancements
 
 * Add search functionality

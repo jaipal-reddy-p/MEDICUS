@@ -2,9 +2,9 @@
 
 ## Project Description
 
-Medicine Directory Web Application is a simple and user-friendly healthcare information project developed using HTML, CSS, and JavaScript. The application provides an A–Z based medicine directory where users can explore different medicines alphabetically, along with their uses and images.
+Medicine Directory Web Application is a simple and user-friendly healthcare information project developed using HTML, CSS, and JavaScript. The application provides an A–Z based medicine directory[...]
 
-The main goal of this project is to provide basic medical information in a clean and accessible way so users can easily search and learn about medicines and their purposes. The project also includes user authentication pages, such as Login, Sign Up, and Forgot Password interfaces, to enhance the user experience.
+The main goal of this project is to provide basic medical information in a clean and accessible way so users can easily search and learn about medicines and their purposes. The project also include[...]
 
 This project focuses on creating a minimal and responsive frontend medical information platform with an easy navigation system.
 
@@ -29,6 +29,10 @@ The application also includes:
 * Responsive User Interface
 
 This project is designed to provide basic medicine-related information in a simple and organized manner.
+
+## 🌐 Live Demo
+
+View the live project here: https://jaipal-reddy-p.github.io/MEDICUS/
 
 ---
 
